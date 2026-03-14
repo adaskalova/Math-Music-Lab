@@ -57,8 +57,8 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/music-mathematics.git
-   cd music-mathematics
+   git clone https://github.com/your-username/Math-Music-Lab.git
+   cd Math-Music-Lab
    ```
 
 2. Install dependencies:
@@ -66,12 +66,25 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
    pip install numpy matplotlib scipy jupyter
    ```
 
-3. Open the notebooks:
+3. Run the Python modules in `/src`:
    ```bash
+   cd src
+   python math_music_part1.py
+   python math_music_part2.py
+   python math_music_part3.py
+   ```
+   > Each script can be run independently. Output audio files will be saved in the `audio/` folder.
+
+4. Open the Jupyter notebooks in `/notebooks`:
+   ```bash
+   cd ../notebooks
    jupyter notebook
    ```
 
-4. Run the notebooks in order: Part 1 → Part 2 → Part 3
+5. Run the notebooks in order:
+   - `math_music_part1.ipynb` — Part 1: Physics of Sound
+   - `math_music_part2.ipynb` — Part 2: Musical Scales
+   - `math_music_part3.ipynb` — Part 3: Intervals & Consonance
 
 ---
 
