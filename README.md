@@ -57,8 +57,8 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/music-mathematics.git
-   cd music-mathematics
+   git clone https://github.com/your-username/Math-Music-Lab.git
+   cd Math-Music-Lab
    ```
 
 2. Install dependencies:
