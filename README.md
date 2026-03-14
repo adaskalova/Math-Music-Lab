@@ -82,7 +82,7 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 | Sine wave | `A(t) = A · sin(2πft + φ)` |
 | Octave | `f_octave = 2 · f` |
 | Equal temperament | `f_n = f₀ · 2^(n/12)` |
-| Beating frequency | `f_beat = |f₁ - f₂|` |
+| Beating frequency | f_beat = &#124;f₁ - f₂&#124; |
 | Cents deviation | `cents = 1200 · log₂(f₁/f₂)` |
 | Pythagorean fifth | `f = f₀ · (3/2)^k · (1/2)^m` |
 
