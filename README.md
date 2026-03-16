@@ -10,11 +10,6 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 
 ---
 
-## 📂 Project Structure
-
-
----
-
 ## 📚 Contents by Part
 
 ### Part 1 – Physics of Sound
