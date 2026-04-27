@@ -35,10 +35,10 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 
 ### Part 4 – Empirical Analysis Using Real-World Data
 - **Data Integration**: Merging and cleaning a dataset of 114,000+ tracks.
-- **Hypothesis Testing**: Using Pearson, ANOVA, and Spearman tests to prove musical patterns.
+- **Hypothesis Testing**: Applying statistical methods (Pearson, ANOVA, Spearman) to verify observed patterns in the data.
 - **Physical vs. Perceptual**: Proving the link between loudness (dB) and energy.
-- **Genre Profiling**: Statistical proof that genres have distinct mathematical "fingerprints".
-- **Visual Evidence**: Regplots, Confidence Intervals, and LOWESS curves.
+- **Genre Profiling**: Demonstrating that different music genres have statistically distinct characteristics.
+- **Visual Evidence**: Supporting results with clear visualizations such as regression plots, confidence intervals, and non-linear trend curves (LOWESS).
 ---
 
 ## Statistical Methodology
@@ -51,9 +51,21 @@ The project applies the following tests to validate musical theories:
 
 ## Data Sources
 
-This project utilizes data from two independent sources to ensure a comprehensive analysis:
-1. **Spotify Tracks Dataset (Kaggle)**: Comprehensive audio features for 114k+ songs across 125 genres.
-2. **Music Physics Data (Theoretical)**: Generated waveforms and intervals based on acoustic physics principles.
+This project utilizes two independent and publicly accessible data sources:
+1. **Spotify Tracks Dataset (Kaggle)**:
+	Content: A large-scale collection of over 114,000 tracks.
+	Focus: Detailed audio features such as energy, tempo, danceability, and loudness.
+	Status: Publicly available and free to use for research purposes.
+2. **CORGIS Music Dataset (Educational Repository)**:
+	Content: A separate collection of 10,000 tracks.
+	Focus: Мetadata including artist popularity, release year, and album details.
+	Status: Free educational resource provided by the CORGIS Educational Repository.
+
+Different Origin: The datasets were curated by different organizations for different purposes (one for general research, the other specifically for educational analysis).
+Diverse Scope: The Kaggle dataset provides deep "technical/physical" audio metrics, while the CORGIS dataset offers "historical/popularity" metadata.
+Accessibility:
+**Accessibility:**
+Both datasets are publicly available and free to access. The [Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) is available on Kaggle, and the music metadata dataset is provided by the [CORGIS Educational Repository](https://corgis-edu.github.io/corgis/csv/music/). No proprietary or paid data sources were required.
 
 ## Technologies Used
 
