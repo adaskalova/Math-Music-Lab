@@ -53,17 +53,18 @@ The project applies the following tests to validate musical theories:
 
 This project utilizes two independent and publicly accessible data sources:
 1. **Spotify Tracks Dataset (Kaggle)**:
-	Content: A large-scale collection of over 114,000 tracks.
-	Focus: Detailed audio features such as energy, tempo, danceability, and loudness.
-	Status: Publicly available and free to use for research purposes.
+	**Content:** A large-scale collection of over 114,000 tracks.
+	**Focus:** Detailed audio features such as energy, tempo, danceability, and loudness.
+	**Status:** Publicly available and free to use for research purposes.
 2. **CORGIS Music Dataset (Educational Repository)**:
-	Content: A separate collection of 10,000 tracks.
-	Focus: Мetadata including artist popularity, release year, and album details.
-	Status: Free educational resource provided by the CORGIS Educational Repository.
+	**Content:** A separate collection of 10,000 tracks.
+	**Focus:** Мetadata including artist popularity, release year, and album details.
+	**Status:** Free educational resource provided by the CORGIS Educational Repository.
 
-Different Origin: The datasets were curated by different organizations for different purposes (one for general research, the other specifically for educational analysis).
-Diverse Scope: The Kaggle dataset provides deep "technical/physical" audio metrics, while the CORGIS dataset offers "historical/popularity" metadata.
-Accessibility:
+**Different Origin:** The datasets were curated by different organizations for different purposes (one for general research, the other specifically for educational analysis).
+
+**Diverse Scope:** The Kaggle dataset provides deep "technical/physical" audio metrics, while the CORGIS dataset offers "historical/popularity" metadata.
+
 **Accessibility:**
 Both datasets are publicly available and free to access. The [Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) is available on Kaggle, and the music metadata dataset is provided by the [CORGIS Educational Repository](https://corgis-edu.github.io/corgis/csv/music/). No proprietary or paid data sources were required.
 
