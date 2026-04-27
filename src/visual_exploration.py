@@ -15,8 +15,8 @@ print("Libraries imported successfully.")
 """Loading the files:"""
 
 # loading the datasets
-df_spotify = pd.read_csv('path/to/file')
-df_corgis = pd.read_csv('path/to/file')
+df_spotify = pd.read_csv('path/to/dataset.csv')
+df_corgis = pd.read_csv('path/to/music.csv')
 
 # basic check of the data size
 print(f"Spotify Dataset: {df_spotify.shape[0]} rows, {df_spotify.shape[1]} columns")
