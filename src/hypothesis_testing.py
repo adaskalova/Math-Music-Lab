@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # Load and basic clean (same as Part 1 to ensure consistency)
 # should load a file: dataset.csv
-df = pd.read_csv('path/to/data/dataset.csv')
+df = pd.read_csv('/home/asya/Documents/Asya/AI/AI_Machine_Learning/data/dataset.csv')
 
 df = df.dropna(subset=['track_name', 'artists'])
 df = df[df['tempo'] > 0]
@@ -134,3 +134,21 @@ rho, p_value_spearman = stats.spearmanr(df['tempo'], df['danceability'])
 
 print(f"Spearman Correlation (rho): {rho:.4f}")
 print(f"P-value: {p_value_spearman:.4e}")
+
+# 5. Hypothesis Testing 4: The Correlation Between Emotional Content (Valence) and Physical Movement (Danceability)
+# statistical calculation
+rho_val, p_val_valence = stats.spearmanr(df['valence'], df['danceability'])
+
+print("-" * 45)
+print("Correlation: Valence vs. Danceability")
+print("-" * 45)
+print(f"Spearman rho : {rho_val:.4f}")
+print(f"P-value      : {p_val_valence:.2e}")
+print("-" * 45)
+
+# visualize density relationship using hexbins
+# hexbins are used to show the mass of data rather than individual points
+g = sns.jointplot(x='valence', y='danceability', data=df, kind="hex", color="#2ecc71", height=8)
+plt.subplots_adjust(top=0.9)
+g.fig.suptitle("Density Mapping: Emotional Valence vs. Danceability")
+plt.show()
