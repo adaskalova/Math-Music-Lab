@@ -44,10 +44,18 @@ Music is not just art — it is mathematics. Every note, chord, and scale follow
 ## Statistical Methodology
 
 The project applies the following tests to validate musical theories:
+
 1. **Pearson Correlation**: To measure the linear relationship between loudness and energy ($r=0.76$).
+*Why:* Both variables are continuous and expected to have a linear relationship, making Pearson correlation the most appropriate metric.
+
 2. **One-Way ANOVA**: To verify if the variance in energy levels between genres is statistically significant.
+*Why:* This method compares the mean values of a continuous variable (energy) across multiple categorical groups (genres), which is exactly the purpose of ANOVA.
+
 3. **Spearman Rank Correlation**: Used with **LOWESS curves** to investigate non-linear relationships between tempo and danceability.
+*Why:* The relationship is not strictly linear, and Spearman captures monotonic trends. LOWESS helps visualize potential non-linear patterns in the data.
+
 4. **95% Confidence Intervals**: Visualized to ensure comparisons between genres are accurate and not due to random noise.
+*Why:* Confidence intervals provide a measure of uncertainty and reliability, helping interpret whether observed differences are statistically meaningful.
 
 ## Data Sources
 
