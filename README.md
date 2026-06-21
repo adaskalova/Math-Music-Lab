@@ -56,6 +56,34 @@ The project applies the following tests to validate musical theories:
 
 4. **95% Confidence Intervals**: Visualized to ensure comparisons between genres are accurate and not due to random noise.
 	- **Why:** Confidence intervals provide a measure of uncertainty and reliability, helping interpret whether observed differences are statistically meaningful.
+	
+
+### Machine Learning: The Mathematical Fingerprint of Musical Success
+
+This part answers two questions: *Does what makes a song a "hit" have a stable
+mathematical signature?* and *Can a model trained on past data recognize today's hits?*
+
+**1. Data Acquisition & Cleaning** (`math_music_data_cleaning`)
+- Programmatic download of three sources (Spotify, CORGIS, Billboard Hot 100).
+- Handling missing values, removing duplicates, standardizing song/artist names.
+- Merging Spotify + Billboard into a `master_dataset` with the target `is_hit`.
+- CORGIS set aside as a historical dataset for time series analysis.
+
+**2. EDA & Feature Engineering** (`math_music_eda_feature_engineering`)
+- Exploratory analysis: structure, missing values, correlation matrix.
+- Engineered features: `energy_loudness_ratio` and `mood_index`.
+- **Dimensionality Reduction (PCA)** — scree plot and 2D projection.
+- **Clustering (K-Means)** with the Elbow method.
+- **Time Series** analysis of loudness and tempo across decades ("Loudness War").
+
+**3. Modeling & MLflow** (`math_music_modeling_and_mlflow`)
+- **Linear Regression** to predict popularity.
+- **Random Forest** classification for hit prediction (baseline + **SMOTE** for imbalance).
+- **Feature Importance** — Instrumentalness, Acousticness and the engineered `cluster`
+  emerged as the strongest predictors.
+- Evaluation: Confusion Matrix, F1-score, **ROC-AUC**.
+- Full experiment tracking with **MLflow** (params, metrics, artifacts).
+---
 
 ## Data Sources
 
@@ -91,6 +119,10 @@ Both datasets are publicly available and free to access. The [Spotify Tracks Dat
 | Seaborn | Advanced statistical visualizations |
 | SciPy (stats) | Hypothesis testing (Pearson, ANOVA, Spearman) |
 | Statsmodels | LOWESS non-linear trend analysis |
+| Scikit-learn | ML models (Linear Regression, Random Forest, PCA, K-Means) |
+| imbalanced-learn (SMOTE) | Handling class imbalance for hit prediction |
+| MLflow | Experiment tracking, metrics and model versioning |
+| Google Colab | Cloud environment where the ML notebooks were developed |
 
 ---
 
