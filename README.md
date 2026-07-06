@@ -83,6 +83,21 @@ mathematical signature?* and *Can a model trained on past data recognize today's
   emerged as the strongest predictors.
 - Evaluation: Confusion Matrix, F1-score, **ROC-AUC**.
 - Full experiment tracking with **MLflow** (params, metrics, artifacts).
+
+**4. Scientific Validation & Notebook Report** (`math_music_scientific_validation.py` / `math_music_scientific_validation.ipynb`)
+- Adds a scientific validation layer on top of the existing ML pipeline.
+- Documents the main research question, null hypothesis, and alternative hypothesis.
+- Performs reproducibility checks using file checksums, package versions, random seed, and a data-version manifest.
+- Audits the `is_hit` target, class imbalance, missing values, duplicates, and possible Billboard-related leakage columns.
+- Defines a conservative leakage-safe feature set using only raw audio features available before chart outcomes.
+- Compares models against a `DummyClassifier` baseline using **Stratified K-Fold cross-validation**.
+- Evaluates models with imbalance-aware metrics: **ROC-AUC**, **Average Precision / PR-AUC**, **F1-score**, **Precision**, and **Recall**.
+- Uses **Permutation Importance** to interpret which audio features influence model predictions.
+- Performs detailed error analysis of false positives and false negatives.
+- Concludes that audio features contain a weak but measurable predictive signal, but Billboard success cannot be explained by audio structure alone.
+
+> Reproducibility note: `math_music_scientific_validation.ipynb` should be executed at least twice.
+> The first run creates `data/processed/data_version_manifest.json`; the second run compares the current processed datasets against this saved manifest.
 ---
 
 ## Data Sources
