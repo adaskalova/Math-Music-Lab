@@ -3,7 +3,11 @@
 A project exploring the deep mathematical foundations of music — from the physics of sound to musical scales, intervals, and harmony.
 
 ---
+## Added Notebooks and Results (DL)
 
+The repository now includes new notebooks under `DL/` (training, inference, and analysis) and their output artifacts saved under `results/DL/`. Notebooks are prepared for interactive use (Google Colab) and include scripts for data restoration, preprocessing, model training, inference, visualization, and artifact export.
+
+---
 ## What is this project about?
 
 Music is not just art — it is mathematics. Every note, chord, and scale follows precise mathematical rules. This project investigates those rules using Python, visualizations, and audio examples.
@@ -119,6 +123,15 @@ This project utilizes two independent and publicly accessible data sources:
 **Accessibility:**
 Both datasets are publicly available and free to access. The [Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) is available on Kaggle, and the music metadata dataset is provided by the [CORGIS Educational Repository](https://corgis-edu.github.io/corgis/csv/music/). No proprietary or paid data sources were required.
 
+## FMA dataset (citation)
+
+Defferrard, M., Benzi, K., Vandergheynst, P., & Bresson, X. (2017). FMA: A Dataset for Music Analysis. 18th ISMIR.
+PDF: https://arxiv.org/pdf/1612.01840.pdf
+
+**License / data note:**
+- FMA metadata is licensed under **CC BY 4.0**.
+- Audio files follow per-artist Creative Commons licenses; consult the original FMA dataset page for exact terms and permitted uses before redistributing audio content.
+
 ## Technologies Used
 
 | Tool | Purpose |
@@ -138,6 +151,18 @@ Both datasets are publicly available and free to access. The [Spotify Tracks Dat
 | imbalanced-learn (SMOTE) | Handling class imbalance for hit prediction |
 | MLflow | Experiment tracking, metrics and model versioning |
 | Google Colab | Cloud environment where the ML notebooks were developed |
+
+---
+
+## Project adaptation note
+
+This project adapts the FMA data pipeline for interactive and cloud workflows (Google Colab / Drive). Key adaptations include:
+- Colab/Drive path variables and mount helpers.
+- Idempotent download & extraction steps and selective audio extraction.
+- Automatic manifest generation for reproducibility (model/experiment metadata).
+- Helper utilities for checksums, deterministic seeding, and dataset indexing.
+
+Any reuse of code or logic from the original `mdeff/fma` repository is acknowledged in notebook headers and documented in this repository.
 
 ---
 
@@ -197,3 +222,12 @@ Both datasets are publicly available and free to access. The [Spotify Tracks Dat
 - Present findings clearly through code, plots, and explanations
 
 ---
+
+## Additional license notes
+
+- The repository provides scripts, notebooks, and metadata to reproduce experiments; it does not change the original dataset licenses.
+- If you redistribute audio files or processed audio derived from FMA, ensure compliance with the per-artist Creative Commons licenses governing those files.
+- The project may reference or adapt code patterns from third-party sources (e.g., `mdeff/fma`); check headers in individual notebooks for explicit acknowledgements and licensing notes.
+
+---
+
