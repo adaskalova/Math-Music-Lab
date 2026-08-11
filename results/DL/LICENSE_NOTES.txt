@@ -1,0 +1,12 @@
+These artifacts contain model outputs and analysis artifacts generated using the FMA dataset and related processing scripts.
+
+    FMA metadata is licensed under CC BY 4.0. Audio files in the original FMA release are distributed under per-artist Creative Commons licenses; users must consult the original FMA dataset page for exact terms and permitted uses before redistributing any audio.
+
+    This folder contains derived artifacts (CSVs, plots, embeddings, JSON manifests). It does not re-distribute original audio files unless explicitly noted.
+
+    If any audio extracts are included in these artifacts, you are responsible for verifying per-track licensing and attribution requirements prior to reuse or redistribution.
+
+    This repository may adapt code or ideas from third-party sources (e.g., the mdeff/fma project). Check notebook headers and individual files for acknowledgements and licensing statements.
+
+    For academic use or citation, please cite the original FMA paper:
+    Defferrard, M., Benzi, K., Vandergheynst, P., & Bresson, X. (2017). FMA: A Dataset for Music Analysis. 18th ISMIR. https://arxiv.org/pdf/1612.01840.pdf
